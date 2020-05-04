@@ -11,24 +11,23 @@ namespace Conexion
         {
             InitializeComponent();
             cadenaConexion = " Server =  127.0.0.1; Port=5432; Database=parkboat;";
-            cadenaConexion += " User Id =admin; "; " 
+            cadenaConexion += " User Id =admin;"; 
             cadenaConexion += "; Password = lavall2c";
-            conexion.ConnectionString = cadenaConexion;
+            Conexion.ConnectionString = cadenaConexion;
             try
             {
-                conexion.Open();
+                Conexion.Open();
             }
             catch
             {
-                MessageBox.Show ("User or parssword incorrect");
-                conexion.Close();
+                MessageBox.Show("User or parssword incorrect");
+                Conexion.Close();
             }
-            if(conexion.state.ToString()=="open")
-                {
+            if (Conexion.state.ToString() == "open")
+            {
                 MessageBox.Show("Connection relized succesfuly");
             }
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
