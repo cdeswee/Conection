@@ -76,11 +76,11 @@ namespace Conexion
             else
                 MessageBox.Show("Information not uploaded to DB");
             cmd.Parameters.Clear();
-            textBoxid.Text = "";
-            textBoxusername.Text = "";
-            textBoxpassword.Text = "";
-            textBoxemail.Text = "";
-            textBoxphonenumber.Text = "";
+            TextBoxid.Text = "";
+            TextBoxusername.Text = "";
+            TextBoxpassword.Text = "";
+            TextBoxemail.Text = "";
+            TextBoxphonenumber.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
