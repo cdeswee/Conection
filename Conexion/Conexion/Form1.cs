@@ -87,7 +87,7 @@ namespace Conexion
         {
             listView1.Items.Clear();
             String sql = ("SELECT *FROM userregistration ORDER BY ID");
-            using (NpgsqlComand comand = new NpgsqlCommand(sql, Conexion));
+            using (NpgsqlComand comand = new NpgsqlCommand(sql, conexion));
             {
                 NpgsqlDataReader reader = comand.ExecuteReader();
                 int 1 = 0;
